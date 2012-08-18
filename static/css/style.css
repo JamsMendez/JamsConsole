@@ -1,0 +1,83 @@
+body{
+	background-color: lightgray;
+}
+
+footer{
+	background-color: black;
+	height: 100px;
+	text-align: right;
+	width: 100%; 	
+}
+
+footer div{
+	margin: 30px 10px 20px 5px;
+	display: inline-block;	
+}
+
+h1{
+	padding: 10px;
+	text-shadow: -5px 1px 10px #5c565c;
+    filter: dropshadow(color=#5c565c, offx=-5, offy=1);
+}
+
+header{
+	background-color:  lightblue; 
+	margin: 0px auto;
+	width: 100%;
+}
+
+nav{
+	margin: 0px auto;
+	width: 100%;
+}
+
+ul{
+	background-color: black;
+	font-size: 15px; 
+}
+
+li a:hover{
+	text-decoration: none;
+}
+
+
+.breadcrumb{
+	margin: 0px;
+	border-radius: 0px;
+} 
+ 
+
+#content{
+	width: 100%;
+	text-align: center;
+}
+
+#content-main{
+	background-color:  lightblue;
+	margin: 0px auto;
+	width: 100%;
+}
+
+#options{
+	padding: 10px;	
+}
+
+#login{
+	padding: 10px;
+}
+
+#app-console{
+	padding: 10px;
+}
+
+textarea{
+	background-color: black;
+	color: lightblue; 
+	height: 450px;
+	margin: 5px;
+	width: 80%;
+}
+
+
+
+

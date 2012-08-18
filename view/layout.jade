@@ -1,0 +1,26 @@
+!!!
+html(lang="es")
+	head
+		meta(charset="utf-8")
+		
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js')
+		link(rel='stylesheet',href="/css/bootstrap.min.css")
+		link(rel='stylesheet',href="/css/style.css")
+	body		
+		header
+			nav
+				ul(class="breadcrumb")
+					li(class="active")  
+						a(class="divider" ,href='/') Home	
+					li
+						a(class="divider" ,href='/app/') JamsConsole
+		section#content-main
+			block content
+
+		footer
+			div 
+				a(href="https://twitter.com/JamsMendez")
+					img(src="/img/logo_Twitter.png", alt="Twitter", width="50", height="50")
+			div	
+				a(href="https://plus.google.com/u/0/102924795170111656045/posts")
+					img(src="/img/logo_Googleplus.png", alt="Googleplus", width="50", height="50")
