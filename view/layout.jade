@@ -2,18 +2,20 @@
 html(lang="es")
 	head
 		meta(charset="utf-8")
-		
+		link(rel='stylesheet',href='/css/bootstrap.min.css')
+		link(rel='stylesheet',href='/css/style.css')
+		link(rel='stylesheet',href='/css/style_home.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js')
-		link(rel='stylesheet',href="/css/bootstrap.min.css")
-		link(rel='stylesheet',href="/css/style.css")
-	body		
+	body
 		header
 			nav
-				ul(class="breadcrumb")
-					li(class="active")  
-						a(class="divider" ,href='/') Home	
-					li
-						a(class="divider" ,href='/app/') JamsConsole
+				div(class="navbar")
+					div(class="navbar-inner")
+						ul(class="nav")
+							li(class="active")
+								a(href='/') Home
+							li
+								a(href='/app/') JamsConsole
 		section#content-main
 			block content
 

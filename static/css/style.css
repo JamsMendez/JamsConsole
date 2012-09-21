@@ -17,7 +17,7 @@ footer div{
 h1{
 	padding: 10px;
 	text-shadow: -5px 1px 10px #5c565c;
-    filter: dropshadow(color=#5c565c, offx=-5, offy=1);
+    filter: dropshadow(colo = #5c565c, offx = -5, offy = 1);
 }
 
 header{
@@ -31,21 +31,26 @@ nav{
 	width: 100%;
 }
 
-ul{
+textarea{
 	background-color: black;
-	font-size: 15px; 
+	color: lightblue; 
+	height: 450px;
+	margin: 5px;
+	width: 80%;
 }
 
-li a:hover{
-	text-decoration: none;
+.alert-success{
+	margin-top: 10px; 
 }
-
 
 .breadcrumb{
 	margin: 0px;
 	border-radius: 0px;
 } 
- 
+
+.navbar{
+	margin-bottom: 0px;
+}
 
 #content{
 	width: 100%;
@@ -58,25 +63,14 @@ li a:hover{
 	width: 100%;
 }
 
-#options{
+#app-console, #login, #options{
 	padding: 10px;	
 }
 
 #login{
-	padding: 10px;
+	margin: 0px 0px;
 }
 
-#app-console{
-	padding: 10px;
-}
-
-textarea{
-	background-color: black;
-	color: lightblue; 
-	height: 450px;
-	margin: 5px;
-	width: 80%;
-}
 
 
 

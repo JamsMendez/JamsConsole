@@ -7,7 +7,8 @@ $(document).on('ready', function(){
 		init();
 	});
 
-	$('#btnlogin').on('click',function(){
+	$('#btnlogin').on('click',function(evt){
+		evt.preventDefault();
 		var user = $('#user').val();
 		$('#user').val('');
 		if(user.replace(" ","") != ""){
@@ -18,9 +19,7 @@ $(document).on('ready', function(){
 	var init = function (){
 
 		$(".alert").hide();
-
 		$("textarea").tabby();
-
 		$('#console').keyup(function(evt){
 			var text = $('#console').val()
 			websocket.emit('writeText', text, name_user);	
@@ -69,5 +68,7 @@ $(document).on('ready', function(){
 	function removeElementSelect(manager){
 		 $("#user_manager option[value='" + manager + "']").remove();  
 	}
+
+
 
 });

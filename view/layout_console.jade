@@ -1,23 +1,24 @@
 !!!
 html(lang="es")
 	head
-		meta(charset="utf-8")
-		
+		meta(charset='utf-8')
+		link(rel='stylesheet',href='/css/bootstrap.min.css')
+		link(rel='stylesheet',href='/css/style.css')
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js')
 		script(src='http://teddevito.com/demos/js/jquery.textarea.js')
-		script(src='/socket.io/socket.io.js')
 		script(src='/js/bootstrap-alert.js')
+		script(src='/socket.io/socket.io.js')
 		script(src='/js/console.js')
-		link(rel='stylesheet',href="/css/bootstrap.min.css")
-		link(rel='stylesheet',href="/css/style.css")
-	body		
+	body
 		header
 			nav
-				ul(class="breadcrumb")
-					li(class="active")  
-						a(class="divider" ,href='/') Home	
-					li
-						a(class="divider" ,href='/app/') JamsConsole
+				div(class="navbar")
+					div(class="navbar-inner")
+						ul(class="nav")
+							li  
+								a(href='/') Home
+							li(class="active")
+								a(href='/app/') JamsConsole
 		section#content-main
 			block content
 
