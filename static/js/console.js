@@ -17,11 +17,11 @@ $(document).on('ready', function(){
 	});
 
 	var init = function (){
-
+		console.log("Entre!!!");
 		$(".alert").hide();
-		$("textarea").tabby();
-		$('#console').keyup(function(evt){
-			var text = $('#console').val()
+		$('textarea').on('keyup', function(evt){
+			var text = $(this).val();
+			console.log(text);
 			websocket.emit('writeText', text, name_user);	
 		});
 
@@ -57,7 +57,7 @@ $(document).on('ready', function(){
 
 	function receiveText(text, manager){
 		if($('#user_manager option:selected').val() == manager){
-			$('#console').val(text);
+			$('textarea').val(text);
 		}
 	}
 
@@ -68,7 +68,4 @@ $(document).on('ready', function(){
 	function removeElementSelect(manager){
 		 $("#user_manager option[value='" + manager + "']").remove();  
 	}
-
-
-
 });

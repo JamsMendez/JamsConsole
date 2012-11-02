@@ -7,6 +7,7 @@ var PORT = 3000;
 
 //var server = express.createServer();
 //server.listen(PORT);
+
 var app = express();
 var server = http.createServer(app);
 var socket_io = io.listen(server);

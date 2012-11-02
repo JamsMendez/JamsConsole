@@ -33,7 +33,7 @@ nav{
 
 textarea{
 	background-color: black;
-	color: lightblue; 
+	color: orange; 
 	height: 450px;
 	margin: 5px;
 	width: 80%;
@@ -69,6 +69,10 @@ textarea{
 
 #login{
 	margin: 0px 0px;
+}
+
+.CodeMirror {
+	border-top: 1px solid black; border-bottom: 1px solid black;
 }
 
 

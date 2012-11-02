@@ -5,7 +5,7 @@ block content
 		div#name_user(class="alert alert-success")
 			a(class="close", data-dismiss="alert", href="#") x
 
-		textarea#console
+		textarea(onkeydown="insertTab(this, event);")
 
 		section#controller
 			div#options
@@ -16,6 +16,8 @@ block content
 			form#login
 				label(class="control-label") Usuario
 				input#user(class="text", type="text", placeholder="Usuario")
+				label(class="control-label") Asunto
+				input#issue(class="text", type="text",placeholder="Asunto")
 				p
 					input#btnlogin(class="btn btn-info", type="submit", required="required",value="Login")
 				
